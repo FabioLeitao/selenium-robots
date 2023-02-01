@@ -3,7 +3,7 @@ Selenium Applications for monitoring robots
 
 Para usar a versão em Python3 (testado no Python3.10), como alguns pacotes pip adicionados como dependência:
 
-<code> sudo apt update -o Acquire::http::No-Cache=True && sudo apt-get check && </code></br>
+<code> sudo apt update -o Acquire::http::No-Cache=True && sudo apt-get check && \\ </code></br>
 <code>     sudo apt install -y python3-pip && sudo apt -fy install ; </code></br>
 <code> pip install -U selenium sendmail webdriver-manager ; </code></br>
 <code> echo "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" \\ </code></br>
