@@ -33,12 +33,12 @@ logOpen = scriptPath+"/logs//Log_my_mon.txt"
 
 
 if debug == "ON":
-    print("Abrindo navegador com interface")
+    print("Abrindo navegador Edge com interface")
     options = Options()
     options.add_argument('window-size=1920x1080')
     driver = webdriver.Edge(service=driverService,options=options)
 else:
-    print("Abrindo navegador sem interface")
+    print("Abrindo navegador Edge sem interface")
     options = Options()
     #options.headless = True
     options.add_argument("--headless")
@@ -64,6 +64,7 @@ search_bar.clear()
 search_bar.send_keys("getting started with python")
 #search_bar.send_keys(Keys.RETURN)
 search_bar.submit()
+time.sleep(2)
 print(driver.current_url)
-time.sleep(12)
+time.sleep(10)
 driver.close()
