@@ -7,6 +7,7 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+cn/
 .Python
 build/
 develop-eggs/
@@ -17,6 +18,9 @@ eggs/
 lib/
 lib64/
 parts/
+prime/
+stage/
+*.snap
 sdist/
 var/
 wheels/
@@ -70,6 +74,76 @@ instance/
 
 # Sphinx documentation
 docs/_build/
+
+# Snapcraft global state tracking data(automatically generated)
+# https://forum.snapcraft.io/t/location-to-save-global-state/768
+/snap/.snapcraft/
+
+# Source archive packed by `snapcraft cleanbuild` before pushing to the LXD container
+/*_source.tar.bz2
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Pacotes compactados
+*.zip
+*.tgz
+*.gz
+*.rar
+*.arj
+*.bzip
+*.tbz
+*.tar
+
+# Executables
+*.exe
+*.out
+*.app
+*driver*
+
+build
+bin
+btop
+.*/
+
+
+#do not ignore .github directory
+!.github
+
+# Ignore files created by Qt Creator
+*.config
+*.creator
+*.creator.user
+*.creator.user.*
+*.cflags
+*.cxxflags
+*.files
+*.includes
 
 # PyBuilder
 target/
