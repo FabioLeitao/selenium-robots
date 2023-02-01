@@ -19,7 +19,7 @@ from webdriver_manager.firefox import GeckoDriverManager
 
 ###### DEBUG MODE #####
 debug = "ON"
-#debug = "OFF"
+debug = "OFF"
 
 ###### Variaveis pertinentes #####
 #driverPath = "/usr/local/bin/chromedriver"
@@ -27,7 +27,8 @@ driverService=Service(GeckoDriverManager().install())
 scriptPath = "/opt/selenium/"
 homeDir = "/home/leitao/"
 date_time_obj = datetime.now().strftime("%Y%m%d""-""%H-%M")
-screenShot = scriptPath+"/ScreenShot/EV/ev-"+date_time_obj+".png"
+screenShot = scriptPath+"/ScreenShot/monitoramento/firefox-"+date_time_obj+".png"
+screenShot2 = scriptPath+"/ScreenShot/monitoramento/firefox2-"+date_time_obj+".png"
 htmlOpen = scriptPath+"/HTML//my_mon.html"
 logOpen = scriptPath+"/logs//Log_my_mon.txt"
 
@@ -63,8 +64,10 @@ search_bar = driver.find_element(By.NAME, "q")
 search_bar.clear()
 search_bar.send_keys("getting started with python")
 #search_bar.send_keys(Keys.RETURN)
+driver.save_screenshot(screenShot)
 search_bar.submit()
 time.sleep(2)
 print(driver.current_url)
+driver.save_screenshot(screenShot2)
 time.sleep(10)
 driver.close()
