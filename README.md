@@ -3,7 +3,8 @@ Selenium Applications for monitoring robots
 
 Para usar a versão em Python3 (testado no Python3.10), como alguns pacotes pip adicionados como dependência:
 
-<code> sudo apt update -o Acquire::http::No-Cache=True && sudo apt-get check && sudo apt install -y python3-pip && sudo apt -fy install ; </code></br>
+<code> sudo apt update -o Acquire::http::No-Cache=True && sudo apt-get check && </code></br>
+<code>     sudo apt install -y python3-pip && sudo apt -fy install ; </code></br>
 <code> pip install -U selenium sendmail webdriver-manager ; </code></br>
 <code> echo "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" \\ </code></br>
 <code>     sudo tee /etc/apt/sources.list.d/google-chrome.list ; </code></br>
@@ -23,4 +24,6 @@ Para usar a versão em Python3 (testado no Python3.10), como alguns pacotes pip 
 <code>     ' | sudo tee /etc/apt/preferences.d/mozilla-firefox ; </code></br>
 <code> echo 'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:${distro_codename}";' | \\ </code></br>
 <code>     sudo tee /etc/apt/apt.conf.d/51unattended-upgrades-firefox ; </code></br>
-<code> sudo apt update -o Acquire::http::No-Cache=True && sudo apt install -y microsoft-edge-stable firefox && sudo apt -fy install ; </code></br>
+<code> sudo apt update -o Acquire::http::No-Cache=True && \\ </code></br>
+<code>     sudo apt install -y microsoft-edge-stable firefox && \\ </code></br>
+<code>     sudo apt -fy install ; </code></br>
