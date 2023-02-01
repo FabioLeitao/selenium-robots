@@ -14,7 +14,7 @@ Para usar a versão em Python3 (testado no Python3.10), como alguns pacotes pip 
 <code> sudo install -o root -g root -m 644 microsoft.gpg /usr/share/keyrings/ ; </code></br>
 <code> echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] \\ </code></br>
 <code>     https://packages.microsoft.com/repos/edge stable main" | \\ </code></br>
-<code>     sudo tee /etc/apt/sources.list.d/microsoft-edge.list' && sudo rm microsoft.gpg ; </code></br>
+<code>     sudo tee /etc/apt/sources.list.d/microsoft-edge.list && sudo rm microsoft.gpg ; </code></br>
 <code> sudo snap remove firefox ; </code></br>
 <code> sudo add-apt-repository ppa:mozillateam/ppa ; </code></br>
 <code> echo ' \\ </code></br>
