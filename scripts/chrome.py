@@ -24,7 +24,7 @@ debug = "OFF"
 ###### Variaveis pertinentes #####
 #driverPath = "/usr/local/bin/chromedriver"
 driverService=Service(ChromeDriverManager().install())
-scriptPath = "/opt/selenium/"
+scriptPath = "/home/leitao/versionamento/selenium-robots/"
 homeDir = "/home/leitao/"
 date_time_obj = datetime.now().strftime("%Y%m%d""-""%H-%M")
 screenShot = scriptPath+"/ScreenShot/monitoramento/chrome-"+date_time_obj+".png"

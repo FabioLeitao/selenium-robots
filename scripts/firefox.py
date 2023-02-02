@@ -19,12 +19,12 @@ from webdriver_manager.firefox import GeckoDriverManager
 
 ###### DEBUG MODE #####
 debug = "ON"
-debug = "OFF"
+#debug = "OFF"
 
 ###### Variaveis pertinentes #####
 #driverPath = "/usr/local/bin/chromedriver"
 driverService=Service(GeckoDriverManager().install())
-scriptPath = "/opt/selenium/"
+scriptPath = "/home/leitao/versionamento/selenium-robots/"
 homeDir = "/home/leitao/"
 date_time_obj = datetime.now().strftime("%Y%m%d""-""%H-%M")
 screenShot = scriptPath+"/ScreenShot/monitoramento/firefox-"+date_time_obj+".png"
