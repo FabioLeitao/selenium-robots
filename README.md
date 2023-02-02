@@ -27,3 +27,6 @@ Para usar a versão em Python3 (testado no Python3.10), como alguns pacotes pip 
 <code> sudo apt update -o Acquire::http::No-Cache=True && \\ </code></br>
 <code>     sudo apt install -y microsoft-edge-stable firefox && \\ </code></br>
 <code>     sudo apt -fy install ; </code></br>
+
+
+https://www.omgubuntu.co.uk/2022/04/how-to-install-firefox-deb-apt-ubuntu-22-04#:%7E:text=Installing%20Firefox%20via%20Apt%20(Not%20Snap)&text=You%20add%20the%20Mozilla%20Team,%2C%20bookmarks%2C%20and%20other%20data.
